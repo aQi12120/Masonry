@@ -15,6 +15,7 @@
     self.translatesAutoresizingMaskIntoConstraints = NO;
     MASConstraintMaker *constraintMaker = [[MASConstraintMaker alloc] initWithView:self];
     block(constraintMaker);
+    printf("");
     return [constraintMaker install];
 }
 
